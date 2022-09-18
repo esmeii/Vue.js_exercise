@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js sample</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <textarea v-model="myText"></textarea>
+      <p>문장은 {{myText}}</p>
+      <p>문자 수는 {{myText.length}}</p>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          myText: "오늘 날씨 좋지",
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vue.js sample</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <label><input type="checkbox" value="값1" v-model="myCheck" />1</label
+      ><br />
+      <label><input type="checkbox" vlaue="값2" v-model="myCheck" />2</label
+      ><br />
+      <label><input type="checkbox" value="값3" v-model="myCheck" />3</label>
+      <br />선택한 색은 {{myCheck}}
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          myCheck: [],
+        },
+      });
+    </script>
+  </body>
+</html>
